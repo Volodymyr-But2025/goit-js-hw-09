@@ -1,0 +1,29 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.gallery li {
+  flex: 1 0 calc(33.333% - 10px);
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 2px;
+
+  cursor: zoom-in;
+}
+img:hover {
+  transform: scale(1.04);
+  transition: transform 0.3s ease;
+}
+.sl-wrapper {
+  background-color: rgba(46, 47, 66, 0.8);
+}

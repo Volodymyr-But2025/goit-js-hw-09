@@ -1,0 +1,75 @@
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 408px;
+  min-width: 296px;
+  background-color: #ffffff;
+  padding: 24px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  color: #2e2f42;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+/* Поля вводу (Normal state) */
+input[type='email'],
+textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  outline: none;
+  font-size: 16px;
+  transition: border-color 0.2s ease;
+  box-sizing: border-box; /* Щоб падінги не розширювали блок */
+}
+
+/* Стан Hover */
+input[type='email']:hover,
+textarea:hover {
+  border-color: #000000;
+}
+
+/* Стан Active/Focus (як на макеті "active") */
+input[type='email']:focus,
+textarea:focus {
+  border-color: #4e75ff;
+}
+
+/* Placeholder (для стану active на макеті) */
+input::placeholder,
+textarea::placeholder {
+  color: #808080;
+}
+
+textarea {
+  resize: none; /* Заборона зміни розміру, як на макеті */
+  height: 100px;
+}
+
+/* Кнопка (Normal state) */
+button[type='submit'] {
+  background-color: #4e75ff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  width: fit-content;
+  transition: background-color 0.2s ease;
+}
+
+/* Кнопка (Hover state) */
+button[type='submit']:hover {
+  background-color: #6c8cff;
+}
